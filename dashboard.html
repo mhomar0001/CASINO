@@ -251,12 +251,18 @@ body {
 					
 								<div class="row">
 									<div class="col-md-12" >
-										<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+										<div class="col-md-4"></div>
+										<div class="col-md-4" style="background-color:white">
+											<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										
+										<div class="col-md-4"></div>
+										<div class="col-md-4" style="background-color:white">
+											<div id="myChartpie" style="width:100%; max-width:600px; height:500px;"></div>
+										</div>
 									</div>
 								</div>
 								
@@ -271,6 +277,30 @@ body {
 	</div>
 </div>
 
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Contry', 'Mhl'],
+  ['Italy',54.8],
+  ['France',48.6],
+  ['Spain',44.4],
+  ['USA',23.9],
+  ['Argentina',14.5]
+]);
+
+var options = {
+  title:'World Wide Wine Production',
+  is3D:true
+};
+
+var chart = new google.visualization.PieChart(document.getElementById('myChartpie'));
+  chart.draw(data, options);
+}
+</script>
+		
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 										<script>
 										var xValues = [100,200,300,400,500,600,700,800,900,1000];
