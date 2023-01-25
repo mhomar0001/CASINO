@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CASINO</title>
+	<!-- META TAGS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- FAV ICON(BROWSER TAB ICON) -->
+	<link rel="shortcut icon" href="images/fav.ico" type="image/x-icon">
+	<!-- GOOGLE FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
+	<!-- FONTAWESOME ICONS -->
+	<link rel="stylesheet" href="assets/booking/assets/css/font-awesome.min.css">
+	<!-- ALL CSS FILES -->
+	<link href="assets/booking/assets/css/materialize.css" rel="stylesheet">
+	<link href="assets/booking/assets/css/style.css" rel="stylesheet">
+	<link href="assets/booking/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
+	<link href="assets/booking/assets/css/responsive.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<style>
+html {
+  scroll-behavior: smooth;
+  
+}
+.nav_gradient{
+	background-color: blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to left,#0b0c18,#0b0c18, #0b0c18 , #0b0c18,#0b0c18, #0b0c18);
+  box-shadow: 0px 5px #141d29;
+
+}
+
+/* 
+blue back start */
+/* body {
+	background-image: url("{% static 'img/Line-Navy-Abstract-Wallpaper-28351.jpg' %}");
+	opacity: 0.2;
+ background-repeat: repeat;
+
+} */
+.inn-services{
+	background:white;
+}
+
+.back_img {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back_img::before {    
+      content: "";
+      background-image: url("assets/booking/assets/images/back.jpg");
+	  background-size: cover;
+	  background-repeat:repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+}
+body {
+    background-image: url("assets/booking/assets/images/back.jpg");
+   /* opacity: 0.2; */
+}
+		</style>
+
+
+	
+</head>
+
+<body data-ng-app="">
+	<!--MOBILE MENU-->
+	<section>
+		<div class="mm">
+			<div class="mm-inn">
+				<div class="mm-logo">
+					<a href="index.html"><img src="assets/booking/assets/images/cards.png" style="width:15%; margin-top:-15px" alt="" >
+						<font style="color:#ffff;">CASINO</font>
+					</a>
+				</div>
+				<div class="mm-icon"><span><i class="fa fa-bars show-menu" aria-hidden="true"></i></span>
+				</div>
+				<div class="mm-menu">
+					<div class="mm-close"><span><i class="fa fa-times hide-menu" aria-hidden="true"></i></span>
+					</div>
+					<ul>
+						<li><a href="index.html">Dashboard</a>
+						</li>
+						<li><a href="game_finance.html">Game Finance</a>
+						</li>
+						<li><a href="players.html">Player's Profile</a>
+						</li>				
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--HEADER SECTION-->
+	<section>
+		<!--TOP SECTION-->
+		<div class="menu-section nav_gradient" >
+			<div class="container">
+				<div class="row">
+					<div class="top-bar">
+						<ul>
+							<!-- <li><a class='dropdown-button' href='#' data-activates='dropdown1'> Account <i class="fa fa-angle-down"></i></a>
+							</li>
+							<li><a href="#">Notifications(5)</a>
+							</li>
+							<li><a href="hotel-details.html">Our Hotels</a>
+							</li> 
+							<li><a href="#">About Us</a>
+							</li>
+							<li><a href="#">Contact Us</a>
+							</li>
+							 <li><a class='dropdown-button' href='#' data-activates='dropdown2'>Language <i class="fa fa-angle-down"></i></a>
+							</li> -->
+							<!-- <li><a href="#">Toll Free No: 1800 102 7275</a>
+							</li> -->
+						</ul>
+					</div>
+					<div class="all-drop-down">
+						<!-- Dropdown Structure -->
+						<ul id='dropdown1' class='dropdown-content drop-con-man'>
+						
+						</ul>
+						<!-- Dropdown Structure -->
+						<ul id='drop-index' class='dropdown-content drop-con-man'>
+							<!-- <li><a href="index.html">Home - Default</a>
+							</li> -->
+							<li><a href="index-1.html">Party - Reservation</a>
+							<!-- </li>
+							<li><a href="index-2.html">Home - FullSlider</a>
+							</li>
+							<li><a href="index-3.html">Home - Block Color</a>
+							</li> -->
+						</ul>
+						<!-- Dropdown Structure -->
+						<ul id='dropdown2' class='dropdown-content drop-con-man'>
+							<li><a href="#!">English</a>
+							</li>
+							<li><a href="#!">Spanish</a>
+							</li>
+							<li><a href="#!">Hindi</a>
+							</li>
+							<li><a href="#!">Russian</a>
+							</li>
+							<li><a href="#!">Portuguese</a>
+							</li>
+						</ul>
+						<!-- ROOM Dropdown Structure -->
+						<ul id='drop-room' class='dropdown-content drop-con-man'>
+							<li><a href="all-rooms.html">All Suite Rooms</a>
+							</li>
+							<li><a href="room-details.html">Room Details</a>
+							</li>
+							<li><a href="room-details-block.html">Room Details Block</a>
+							</li>
+							<li><a href="room-details-1.html">Room Parallax</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+
+
+				
+
+
+
+
+
+				<div class="row">
+					<div class="logo col-md-4" >
+						<br><br>
+						<a href="index.html" style="text-decoration: none;"><img src="assets/booking/assets/images/cards.png" style="width:10%; margin-top:-25px" alt="" />
+							<font style="color:#ffff;">CASINO</font>
+						</a>
+					</div>
+					<div class="menu-bar col-md-8">
+						<ul>
+							<!-- <li><a href="#" class='dropdown-button' data-activates='drop-home'>Hall Booking & Special Program <i class="fa fa-angle-down"></i></a>
+							</li> -->
+							<!-- <li><a href="#" class='dropdown-button' data-activates='drop-room'>Rooms <i class="fa fa-angle-down"></i></a>
+							</li> -->
+							<li id="hall_booking_menu"><a href="index.html" >Dashboard</a>
+							
+						</li>
+							
+							<li id="cabin_menu"><a href="game_finance.html" >Game Finance Calculator</a>
+							</li>
+
+							<!-- <li id="food_menu"><a data-toggle="modal" data-target="#exampleModalCenterF">Food</a> -->
+							<li id="food_menu"><a href="players.html" >Player's Profile</a>
+
+							</li>
+							
+							<!-- <li><a href="aminities1.html">Amenities</a>
+							</li> -->
+							<!-- <li><a href="#" class='dropdown-button' data-activates='drop-page'>Pages <i class="fa fa-angle-down"></i></a>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--TOP SECTION-->
+<!-- 
+		<div class="row">
+	<div class="col-md-2"></div><div class="col-md-8">
+		<a class="waves-effect waves-light btn" data-toggle="modal" data-target="#exampleModalCenter" style="margin-left:20%">Confirm Order</a>
+	</div>
+	<div class="col-md-2">
+	</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row col-md-12" style="padding-top:150px;">
+	<div class="col-md-4"></div>
+	<div class="col-md-4" style="padding-left:5%;">
+		<label for="" class="col-form-label" style="font-size:120%">Number of Players:</label>
+        <select class="form-select form-select-sm" name="player_number" id="player_number" aria-label=".form-select-sm example" > 
+			  <option value="">Select Number of Players...</option>  
+              <option value="2">2</option>
+              <option value="3">3</option>
+			  <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+        </select>
+		<div class="row"><br><br></div>	
+
+	</div>
+
+</div>
+
+<div class="row" id="Table_1">
+<div class="col-md-2"></div>
+<div class="col-md-8" style="background-color: white">
+<div style="margin-top:1%">
+					
+						<br><br>
+						
+						<div>
+							<h3 style="color:black; text-align:center; font-size:200%">Game Input</h3>
+						</div>
+						<table class="bordered responsive-table">
+							<thead>
+								<tr id="rh" style="padding:0px; overflow:auto;">
+									<td style="width:120; padding:6px;border: 1px solid; " >Name</td>
+									<td style="width:120; padding:6px;border: 1px solid;" >Investment</td>
+									<td style="width:120; padding:6px;border: 1px solid;" >Investment (std)</td>
+									<td style="width:120; padding:7px;border: 1px solid;" >Food %</td>
+									<td style="width:120; padding:6px;border: 1px solid;" >Profit</td>
+									<td style="width:120; padding:6px;border: 1px solid;" >Food eaten by</td>
+									<td style="width:120; padding:6px;border: 1px solid;" >Cost given by</td>
+								</tr>
+								
+							</thead>
+								
+								
+							<tbody>
+								
+								<tr id="r1" style="padding:0px">
+									<td><input style="width:100%" type="text" class="form-control" name="name1" id="name1" placeholder="1st Player"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_player1" id="init_invest_player1" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_std1" id="init_invest_std1" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_percent1" id="food_percent1" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="profit_player1" id="profit_player1" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_eaten_player1" id="food_cost_eaten_player1" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_given_player1" id="food_cost_given_player1" placeholder="0"></td>
+								</tr>
+                                <tr id="r2" style="padding:0px">
+									<td><input style="width:100%" type="text" class="form-control" name="name2" id="name2" placeholder="2nd Player"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_player2" id="init_invest_player2" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_std2" id="init_invest_std2" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_percent2" id="food_percent2" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="profit_player2" id="profit_player2" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_eaten_player2" id="food_cost_eaten_player2" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_given_player2" id="food_cost_given_player2" placeholder="0"></td>
+								</tr>
+								<tr id="r3" style="padding:0px">
+									<td><input style="width:100%" type="text" class="form-control" name="name3" id="name3" placeholder="3rd Player"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_player3" id="init_invest_player3" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_std3" id="init_invest_std3" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_percent3" id="food_percent3" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="profit_player3" id="profit_player3" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_eaten_player3" id="food_cost_eaten_player3" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_given_player3" id="food_cost_given_player3" placeholder="0"></td>
+								</tr>
+								<tr id="r4" style="padding:0px">
+									<td><input style="width:100%" type="text" class="form-control" name="name4" id="name4" placeholder="4th Player"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_player4" id="init_invest_player4" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_std4" id="init_invest_std4" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_percent4" id="food_percent4" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="profit_player4" id="profit_player4" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_eaten_player4" id="food_cost_eaten_player4" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_given_player4" id="food_cost_given_player4" placeholder="0"></td>
+								</tr>
+								<tr id="r5" style="padding:0px">
+									<td><input style="width:100%" type="text" class="form-control" name="name5" id="name5" placeholder="5th Player"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_player5" id="init_invest_player5" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_std5" id="init_invest_std5" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_percent5" id="food_percent5" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="profit_player5" id="profit_player5" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_eaten_player5" id="food_cost_eaten_player5" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_given_player5" id="food_cost_given_player5" placeholder="0"></td>
+								</tr>
+								<tr id="r6" style="padding:0px">
+									<td><input style="width:100%" type="text" class="form-control" name="name6" id="name6" placeholder="6th Player"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_player6" id="init_invest_player6" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="init_invest_std6" id="init_invest_std6" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_percent6" id="food_percent6" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="profit_player6" id="profit_player6" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_eaten_player6" id="food_cost_eaten_player6" placeholder="0"></td>
+									<td><input style="" type="text" class="form-control" name="food_cost_given_player6" id="food_cost_given_player6" placeholder="0"></td>
+								</tr>
+                               
+							</tbody>
+						</table>
+						<br>
+						<a id="calculate" class="waves-effect waves-light btn" style="margin-left:45%">Calculate</a>
+					
+					
+					
+				</div>
+
+
+				
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div><br><br></div>
+<div id="alert_msg" >
+	<h3 style="color:red; text-align:center; font-size:250%">Total Profit and Total Loss is not equal</h3>
+</div>
+<div class="row"><div class="col-md-2"></div>
+<div class="col-md-8" id="result_table" style="background-color: white">
+
+					<div class="db-cent-table db-com-table">
+						<div>
+							<h3 style="color:black; text-align:center; font-size:200%">Game Calculations</h3>
+						</div>
+						<table class="bordered responsive-table">
+							<thead>
+								<tr id="rrh">
+									<th style="width:155px; height:30px; padding-top:15px; text-align:center;">Player</th>
+									<th style="width:155px; height:30px; padding-top:15px; text-align:center;">Players' 40%</th>
+									<th style="width:155px; height:30px; padding-top:15px; text-align:center;">Total Profit</th>
+									<th style="width:155px; height:30px; padding-top:15px; text-align:center;">Total Food budget</th>
+									<th style="width:155px; height:30px; padding-top:15px; text-align:center;">Food budget per</th>
+									<th style="width:155px; height:30px; padding-top:15px; text-align:center;">Food Money Back</th>
+									<th style="width:155px; height:30px; padding-top:15px; text-align:center;">Final Get</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="rr1">
+									<td id="r1c0" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r1c1" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r1c2" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r1c3" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r1c4" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r1c5" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r1c6" style="width:30px; height:30px; text-align:center;"></td>
+								</tr>
+                                <tr id="rr2">
+                                	<td id="r2c0" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r2c1" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r2c2" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r2c3" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r2c4" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r2c5" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r2c6" style="width:30px; height:30px; text-align:center;"></td>
+								</tr>
+								<tr id="rr3">
+									<td id="r3c0" style="width:30px; text-align:center;"></td>
+									<td id="r3c1" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r3c2" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r3c3" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r3c4" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r3c5" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r3c6" style="width:30px; height:30px; text-align:center;"></td>
+								</tr>
+								<tr id="rr4">
+									<td id="r4c0" style="width:30px; text-align:center;"></td>
+									<td id="r4c1" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r4c2" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r4c3" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r4c4" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r4c5" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r4c6" style="width:30px; height:30px; text-align:center;"></td>
+								</tr>
+								<tr id="rr5">
+									<td id="r5c0" style="width:30px; text-align:center;"></td>
+									<td id="r5c1" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r5c2" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r5c3" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r5c4" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r5c5" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r5c6" style="width:30px; height:30px; text-align:center;"></td>
+								</tr>
+								<tr id="rr6">
+									<td id="r6c0" style="width:30px; text-align:center;"></td>
+									<td id="r6c1" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r6c2" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r6c3" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r6c4" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r6c5" style="width:30px; height:30px; text-align:center;"></td>
+									<td id="r6c6" style="width:30px; height:30px; text-align:center;"></td>
+								</tr>
+                               
+							</tbody>
+						</table>
+					</div>
+
+				
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+									<!-- 
+									name1
+									init_invest_player1
+									init_invest_std1
+									food_percent1
+									profit_player1
+									food_cost_eaten_player1
+									food_cost_given_player1
+								-->
+
+
+<script>
+    $(document).ready(function(){
+	
+	   $('#Table_1').hide();
+	   $('#alert_msg').hide();
+	   $('#result_table').hide();
+	   
+	   $('#player_number').change(function() {
+			if($('#player_number').val() == '2') 
+			{
+				$('#Table_1').show();
+				$('#r1').show();
+				$('#r2').show();
+				$('#r3').hide();
+				$('#r4').hide();
+				$('#r5').hide();
+				$('#r6').hide();
+
+				$('#rr1').show();
+				$('#rr2').show();
+				$('#rr3').hide();
+				$('#rr4').hide();
+				$('#rr5').hide();
+				$('#rr6').hide();
+			}
+			else if($('#player_number').val() == '3') 
+			{
+				$('#Table_1').show();
+				$('#r1').show();
+				$('#r2').show();
+				$('#r3').show();
+				$('#r4').hide();
+				$('#r5').hide();
+				$('#r6').hide();
+
+				$('#rr1').show();
+				$('#rr2').show();
+				$('#rr3').show();
+				$('#rr4').hide();
+				$('#rr5').hide();
+				$('#rr6').hide();
+			}
+			else if($('#player_number').val() == '4') 
+			{
+				$('#Table_1').show();
+				$('#r1').show();
+				$('#r2').show();
+				$('#r3').show();
+				$('#r4').show();
+				$('#r5').hide();
+				$('#r6').hide();
+
+				$('#rr1').show();
+				$('#rr2').show();
+				$('#rr3').show();
+				$('#rr4').show();
+				$('#rr5').hide();
+				$('#rr6').hide();
+			}
+			else if($('#player_number').val() == '5') 
+			{
+				$('#Table_1').show();
+				$('#r1').show();
+				$('#r2').show();
+				$('#r3').show();
+				$('#r4').show();
+				$('#r5').show();
+				$('#r6').hide();
+
+				$('#rr1').show();
+				$('#rr2').show();
+				$('#rr3').show();
+				$('#rr4').show();
+				$('#rr5').show();
+				$('#rr6').hide();
+			}
+			else if($('#player_number').val() == '6') 
+			{
+				$('#Table_1').show();
+				$('#r1').show();
+				$('#r2').show();
+				$('#r3').show();
+				$('#r4').show();
+				$('#r5').show();
+				$('#r6').show();
+
+				$('#rr1').show();
+				$('#rr2').show();
+				$('#rr3').show();
+				$('#rr4').show();
+				$('#rr5').show();
+				$('#rr6').show();
+			}
+			else
+			{
+				$('#Table_1').hide();
+			}
+	   });
+	   $('#calculate').click(function() {
+			$('#result_table_title').show();
+			$('#alert_msg').hide();
+			$('#result_table').show();
+
+			  
+			have_to_pay_of_40_percent1 = (-1)*$('#profit_player1').val()*(100-$('#food_percent1').val())/100; 
+			have_to_pay_of_40_percent2 = (-1)*$('#profit_player2').val()*(100-$('#food_percent2').val())/100;
+			have_to_pay_of_40_percent3 = (-1)*$('#profit_player3').val()*(100-$('#food_percent3').val())/100;
+			have_to_pay_of_40_percent4 = (-1)*$('#profit_player4').val()*(100-$('#food_percent4').val())/100;
+			have_to_pay_of_40_percent5 = (-1)*$('#profit_player5').val()*(100-$('#food_percent5').val())/100;
+			have_to_pay_of_40_percent6 = (-1)*$('#profit_player6').val()*(100-$('#food_percent6').val())/100;
+
+			totals = (1)*($('#profit_player1').val()) + (1)*($('#profit_player2').val()) + (1)*($('#profit_player3').val()) + (1)*($('#profit_player4').val()) + (1)*($('#profit_player5').val()) + (1)*($('#profit_player6').val());
+			
+			 if(totals==0)
+			  {
+				t_profit = (Math.abs((1)*($('#profit_player1').val())) + Math.abs((1)*($('#profit_player2').val())) + Math.abs((1)*($('#profit_player3').val())) + Math.abs((1)*($('#profit_player4').val())) + Math.abs((1)*($('#profit_player5').val())) + Math.abs((1)*($('#profit_player6').val())))/2;
+			
+				// sum = 0;
+				// if((1)*$('#profit_player1').val()>0)
+				// {
+				// 	sum = sum + (1)*$('#profit_player1').val();
+				// }
+				// if((1)*$('#profit_player2').val()>0)
+				// {
+				// 	sum = sum + (1)*$('#profit_player2').val();
+				// }
+				// if((1)*$('#profit_player3').val()>0)
+				// {
+				// 	sum = sum + (1)*$('#profit_player3').val();
+				// }
+				// if((1)*$('#profit_player4').val()>0)
+				// {
+				// 	sum = sum + (1)*$('#profit_player4').val();
+				// }
+				// if((1)*$('#profit_player5').val()>0)
+				// {
+				// 	sum = sum + (1)*$('#profit_player5').val();
+				// }
+				// if((1)*$('#profit_player6').val()>0)
+				// {
+				// 	sum = sum + (1)*$('#profit_player6').val();
+				// }
+				// t_profit = sum;
+				t_food = t_profit * (1)*($('#food_percent1').val())/100;
+				food_person = t_food / ((1)*$('#player_number').val());
+				food_back_money1 = food_person + ((1)*$('#food_cost_given_player1').val()) - ((1)*$('#food_cost_eaten_player1').val());
+				food_back_money2 = food_person + ((1)*$('#food_cost_given_player2').val()) - ((1)*$('#food_cost_eaten_player2').val());
+				food_back_money3 = food_person + ((1)*$('#food_cost_given_player3').val()) - ((1)*$('#food_cost_eaten_player3').val());
+				food_back_money4 = food_person + ((1)*$('#food_cost_given_player4').val()) - ((1)*$('#food_cost_eaten_player4').val());
+				food_back_money5 = food_person + ((1)*$('#food_cost_given_player5').val()) - ((1)*$('#food_cost_eaten_player5').val());
+				food_back_money6 = food_person + ((1)*$('#food_cost_given_player6').val()) - ((1)*$('#food_cost_eaten_player6').val());
+
+				if((1)*($('#profit_player1').val()) > 0)
+				{
+					final_money_get1 = ((1)*($('#profit_player1').val()) * ((100 - (1)*$('#food_percent1').val()) /100)) + food_back_money1 - (1)*$('#init_invest_player1').val();
+				}
+				else if((1)*($('#profit_player1').val()) < 0)
+				{
+					final_money_get1 = (1)*($('#profit_player1').val())  + food_back_money1 - (1)*$('#init_invest_player1').val();
+				}
+				if((1)*($('#profit_player2').val()) > 0)
+				{
+					final_money_get2 = ((1)*($('#profit_player2').val()) * ((100 - (1)*$('#food_percent2').val()) /100)) + food_back_money2 - (1)*$('#init_invest_player2').val();
+				}
+				else if((1)*($('#profit_player2').val()) < 0)
+				{
+					final_money_get2 = (1)*($('#profit_player2').val())  + food_back_money2 - (1)*$('#init_invest_player2').val();
+				}
+				if((1)*($('#profit_player3').val()) > 0)
+				{
+					final_money_get3 = ((1)*($('#profit_player3').val()) * ((100 - (1)*$('#food_percent3').val()) /100)) + food_back_money3 - (1)*$('#init_invest_player3').val();
+				}
+				else if((1)*($('#profit_player3').val()) < 0)
+				{
+					final_money_get3 = (1)*($('#profit_player3').val())  + food_back_money3 - (1)*$('#init_invest_player3').val();
+				}
+				if((1)*($('#profit_player4').val()) > 0)
+				{
+					final_money_get4 = ((1)*($('#profit_player4').val()) * ((100 - (1)*$('#food_percent4').val()) /100)) + food_back_money4 - (1)*$('#init_invest_player4').val();
+				}
+				else if((1)*($('#profit_player4').val()) < 0)
+				{
+					final_money_get4 = (1)*($('#profit_player4').val())  + food_back_money4 - (1)*$('#init_invest_player4').val();
+				}
+				if((1)*($('#profit_player5').val()) > 0)
+				{
+					final_money_get5 = ((1)*($('#profit_player5').val()) * ((100 - (1)*$('#food_percent5').val()) /100)) + food_back_money5 - (1)*$('#init_invest_player5').val();
+				}
+				else if((1)*($('#profit_player5').val()) < 0)
+				{
+					final_money_get5 = (1)*($('#profit_player5').val())  + food_back_money5 - (1)*$('#init_invest_player5').val();
+				}
+				if((1)*($('#profit_player6').val()) > 0)
+				{
+					final_money_get6 = ((1)*($('#profit_player6').val()) * ((100 - (1)*$('#food_percent6').val()) /100)) + food_back_money6 - (1)*$('#init_invest_player6').val();
+				}
+				else if((1)*($('#profit_player6').val()) < 0)
+				{
+					final_money_get6 = (1)*($('#profit_player6').val())  + food_back_money6 - (1)*$('#init_invest_player6').val();
+				}
+
+			 	$('#r1c0').text($('#name1').val());
+			 	$('#r1c1').text(have_to_pay_of_40_percent1);
+				$('#r1c2').text(t_profit);
+				$('#r1c3').text(t_food);
+				$('#r1c4').text(food_person);
+				$('#r1c5').text(food_back_money1);
+				$('#r1c6').text(final_money_get1);
+
+				$('#r2c0').text($('#name2').val());
+				$('#r2c1').text(have_to_pay_of_40_percent2); 
+				$('#r2c2').text();
+				$('#r2c3').text();
+				$('#r2c4').text();
+				$('#r2c5').text(food_back_money2);
+				$('#r2c6').text(final_money_get2);
+
+				$('#r3c0').text($('#name3').val());
+				$('#r3c1').text(have_to_pay_of_40_percent3); 
+				$('#r3c2').text();
+				$('#r3c3').text();
+				$('#r3c4').text();
+				$('#r3c5').text(food_back_money3);
+				$('#r3c6').text(final_money_get3);
+
+				$('#r4c0').text($('#name4').val());
+				$('#r4c1').text(have_to_pay_of_40_percent4); 
+				$('#r4c2').text();
+				$('#r4c3').text();
+				$('#r4c4').text();
+				$('#r4c5').text(food_back_money4);
+				$('#r4c6').text(final_money_get4);
+
+				$('#r5c0').text($('#name5').val());
+				$('#r5c1').text(have_to_pay_of_40_percent5); 
+				$('#r5c2').text();
+				$('#r5c3').text();
+				$('#r5c4').text();
+				$('#r5c5').text(food_back_money5);
+				$('#r5c6').text(final_money_get5);
+
+				$('#r6c0').text($('#name6').val());
+				$('#r6c1').text(have_to_pay_of_40_percent6); 
+				$('#r6c2').text();
+				$('#r6c3').text();
+				$('#r6c4').text();
+				$('#r6c5').text(food_back_money6);
+				$('#r6c6').text(final_money_get6);
+			  }
+			 else
+			 {
+				$('#alert_msg').show();
+				$('#result_table').hide();
+			 }
+			 
+
+	   });
+	});
+
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+	$(".dis").hide();
+	//$(".caret").hide();
+	$('#banquet').addClass('active');
+	$('#blue1').removeClass('active');
+	$('#portfoliolist').removeClass('fail');
+	$('#blue2').removeClass('fail');
+	$('.portfolio.banquet').css("display","inline-block");
+
+	$('#central').addClass('active');
+	$('#portfoliolist').removeClass('fail');
+	$('#boq').removeClass('fail');
+	$('.portfolio.central').css("display","inline-block");
+
+	$("#proceed-1").click(function(){
+		$("#step-1").addClass('hidden');
+		$("#step-2").removeClass('hidden');
+		$("#step-3").addClass('hidden');
+		$("#step-food").addClass('hidden');
+	});
+	$("#proceed-1f").click(function(){
+		$("#step-1").addClass('hidden');
+		$("#step-2").removeClass('hidden');
+		// $("#step-3").addClass('hidden');
+		// $("#step-food").removeClass('hidden');
+	});
+	$("#proceed-2").click(function(){
+		
+			$("#step-1").addClass('hidden');
+			$("#step-2").addClass('hidden');
+			$("#step-food").addClass('hidden');
+			$("#step-3").removeClass('hidden');
+	});
+
+	$("#proceed-2c").click(function(){
+		$("#step-1").addClass('hidden');
+		$("#step-2").addClass('hidden');
+		$("#step-food").removeClass('hidden');
+		$("#step-3").addClass('hidden');
+	});
+
+	$("#proceed-food").click(function(){
+		$("#step-1").addClass('hidden');
+		$("#step-2").addClass('hidden');
+		$("#step-food").addClass('hidden');
+		$("#step-3").removeClass('hidden');
+	});
+	$("#confirmf").click(function(){
+		$("#step-f").hide();
+	});
+	$("#vp").click(function(){
+		if ($("#pvp").hasClass("checked")){
+				// Do something if class exists
+				$("#pvp").css("background-color","");
+				$("#pvp").css("color","");
+				$("#pvp").removeClass();
+				$("#added_1").remove();
+	
+			} else {
+				$("#pvp").css("background-color","#00306F");
+				$("#pvp").css("color","white");
+				$("#pvp").addClass("checked");
+				// Do something if class does not exist
+				// $(".menu-bar ul").append('<li class="blink_me" id="added_1"><a href="#hom1-title"  data-toggle="modal" data-target="#exampleModalCenter">Confirm Food Order</a></li>');
+
+			}
+});
+	$("#vc").click(function(){
+		if ($("#pvc").hasClass("checked")){
+				// Do something if class exists
+				$("#pvc").css("background-color","");
+				$("#pvc").css("color","");
+				$("#pvc").removeClass();
+				$("#added_2").remove();
+	
+			} else {
+				$("#pvc").css("background-color","#00306F");
+				$("#pvc").css("color","white");
+				$("#pvc").addClass("checked");
+				// Do something if class does not exist
+
+			}
+
+	});
+
+	// $("#confirm").click(function(){
+	// 	$("#step-1").hide();
+	// 	$("#step-2").hide();
+	// 	$("#step-3").show();
+		
+	// });
+
+	$("#banquet").click(function(){
+		$('#blue1').removeClass('active');
+		$('#blue2').removeClass('active');
+		$('#banquet').addClass('active');
+		$('.portfolio.blue1').css("display","none");
+		$('.portfolio.blue2').css("display","none");
+		$('.portfolio.banquet').css("display","inline-block");
+	});
+	$("#blue1").click(function(){
+		$('#banquet').removeClass('active');
+		$('#blue2').removeClass('active');
+		$('#blue1').addClass('active');
+		$('.portfolio.banquet').css("display","none");
+		$('.portfolio.blue2').css("display","none");
+		$('.portfolio.blue1').css("display","inline-block");
+	});
+	$("#blue2").click(function(){
+		$('#banquet').removeClass('active');
+		$('#blue1').removeClass('active');
+		$('#blue2').addClass('active');
+		$('.portfolio.blue1').css("display","none");
+		$('.portfolio.blue2').css("display","inline-block");
+
+		$('.portfolio.banquet').css("display","none");
+		$('.portfolio.blue').css("display","inline-block");
+	});
+
+
+
+	$("#central").click(function(){
+		$('#sagorika').removeClass('active');
+		$('#boq').removeClass('active');
+		$('#central').addClass('active');
+		$('.portfolio.sagorika').css("display","none");
+		$('.portfolio.boq').css("display","none");
+		$('.portfolio.central').css("display","inline-block");
+	});
+	$("#boq").click(function(){
+		$('#sagorika').removeClass('active');
+		$('#central').removeClass('active');
+		$('#boq').addClass('active');
+		$('.portfolio.central').css("display","none");
+		$('.portfolio.boq').css("display","inline-block");
+
+		$('.portfolio.sagorika').css("display","none");
+		$('.portfolio.blue').css("display","inline-block");
+	});
+	$("#sagorika").click(function(){
+		$('#central').removeClass('active');
+		$('#boq').removeClass('active');
+		$('#sagorika').addClass('active');
+		$('.portfolio.central').css("display","none");
+		$('.portfolio.boq').css("display","none");
+		$('.portfolio.sagorika').css("display","inline-block");
+	});
+
+	$("#hall_booking_menu").css("height","25px");
+	$("#hall_booking_menu").css("box-shadow","0px 0px 3px lightblue");
+	$("#hall_booking_menu").css("border-radius"," 15px");
+	$("#hall_booking_menu").click(function(){
+
+		$("#cabin_menu").css({ 'height' : '', 'box-shadow' : '' });
+		$("#food_menu").css({ 'height' : '', 'box-shadow' : '' });
+		$("#coffee_menu").css({ 'height' : '', 'box-shadow' : '' });
+		$(this).css("height","25px");
+		$(this).css("box-shadow","0px 0px 3px lightblue");
+		$(this).css("border-radius"," 15px");
+	});
+	
+	$("#cabin_menu").click(function(){
+	$("#hall_booking_menu").css({ 'height' : '', 'box-shadow' : '' });
+	$("#food_menu").css({ 'height' : '', 'box-shadow' : '' });
+	$("#coffee_menu").css({ 'height' : '', 'box-shadow' : '' });
+	$(this).css("height","25px");
+	$(this).css("box-shadow","0px 0px 3px lightblue");
+	$(this).css("border-radius"," 15px");
+	});	
+
+	$("#food_menu").click(function(){
+	$("#hall_booking_menu").css({ 'height' : '', 'box-shadow' : '' });
+	$("#cabin_menu").css({ 'height' : '', 'box-shadow' : '' });
+	$("#coffee_menu").css({ 'height' : '', 'box-shadow' : '' });
+	$(this).css("height","25px");
+	$(this).css("box-shadow","0px 0px 3px lightblue");
+	$(this).css("border-radius"," 15px");
+	});	
+	
+	$("#coffee_menu").click(function(){
+	$("#hall_booking_menu").css({ 'height' : '', 'box-shadow' : '' });
+	$("#cabin_menu").css({ 'height' : '', 'box-shadow' : '' });
+	$("#food_menu").css({ 'height' : '', 'box-shadow' : '' });
+	$(this).css("height","25px");
+	$(this).css("box-shadow","0px 0px 3px lightblue");
+	$(this).css("border-radius"," 15px");
+	});
+});
+
+
+		</script>
+
+	<!--ALL SCRIPT FILES-->
+	
+	
+
+
+</body>
+
+</html>
+
+<!-- <footer class="site-footer clearfix">
+		<div class="sidebar-container">
+			<div class="sidebar-inner">
+				<div class="widget-area clearfix">
+					<div class="widget widget_azh_widget">
+						<div>
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 col-md-3 foot-logo"> <img src="images/logo1.png" alt="logo">
+										<p class="hasimg">Hotels worldwide incl. Infos, Ratings and Photos. Make your Hotel Reservation cheap.</p>
+										<p class="hasimg">The top-rated hotel booking services.</p>
+									</div>
+									<div class="col-sm-12 col-md-3">
+										<h4>Support &amp; Help</h4>
+										<ul class="two-columns">
+											<li><a href="dashboard.html">Dashboard</a>
+											</li>
+											<li><a href="db-activity.html">DB Activity</a>
+											</li>
+											<li><a href="booking.html">Booking</a>
+											</li>
+											<li><a href="contact-us.html">Contact Us</a>
+											</li>
+											<li><a href="about-us.html">About Us</a>
+											</li>
+											<li><a href="aminities.html">Aminities</a>
+											</li>
+											<li><a href="blog.html">Blog</a>
+											</li>
+											<li><a href="menu1.html">Food Menu</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-12 col-md-3">
+										<h4>Cities Covered</h4>
+										<ul class="two-columns">
+											<li><a href="#!">Sydney</a>
+											</li>
+											<li><a href="#!">Basel</a>
+											</li>
+											<li><a href="#!">Copenhagen</a>
+											</li>
+											<li><a href="#!">Frankfurt</a>
+											</li>
+											<li><a href="#!">Vancouver</a>
+											</li>
+											<li><a href="#!">Auckland</a>
+											</li>
+											<li><a href="#!">Vienna</a>
+											</li>
+											<li><a href="#!">Los Angeles</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-12 col-md-3">
+										<h4>Address</h4>
+										<p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport</p>
+										<p> <span class="foot-phone">Phone: </span> <span class="foot-phone">+01 1245 2541</span> </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="foot-sec2">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 col-md-3">
+										<h4>Payment Options</h4>
+										<p class="hasimg"> <img src="images/payment.png" alt="payment"> </p>
+									</div>
+									<div class="col-sm-12 col-md-4">
+										<h4>Subscribe Now</h4>
+										<form>
+											<ul class="foot-subsc">
+												<li>
+													<input type="text" placeholder="Enter your email id"> </li>
+												<li>
+													<input type="submit" value="submit"> </li>
+											</ul>
+										</form>
+									</div>
+									<div class="col-sm-12 col-md-5 foot-social">
+										<h4>Follow with us</h4>
+										<p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
+										<ul>
+											<li><a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+											<li><a href="#!"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+											<li><a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+											<li><a href="#!"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+											<li><a href="#!"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
+											<li><a href="#!"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer> -->
+
+	<!-- <section class="copy" style="margin-bottom:5px">
+		<div class="container">
+			<p>copyrights © <script>
+                  document.write(new Date().getFullYear())
+                </script> DNIT &nbsp;&nbsp;All rights reserved. </p>
+		</div>
+	</section> -->
+
+	</html>
+	<script src="assets/booking/assets/js/jquery.min.js"></script>
+	<script src="assets/booking/assets/js/jquery-ui.js"></script>
+	<script src="assets/booking/assets/js/angular.min.js"></script>
+	<script src="assets/booking/assets/js/bootstrap.js" type="text/javascript"></script>
+	<script src="assets/booking/assets/js/materialize.min.js" type="text/javascript"></script>
+	<!-- <script src="assets/booking/assets/js/jquery.mixitup.min.js" type="text/javascript"></script> -->
+	<script src="assets/booking/assets/js/custom.js"></script>
+	
